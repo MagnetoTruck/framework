@@ -1,13 +1,11 @@
 <?php
 
 	ini_set('display_errors','on');
+	error_reporting(E_ALL);
 
-	define('DS', DIRECTORY_SEPARATOR);
-	define('ROOT', realpath(dirname(__FILE__)).DS);
+	include 'config.php';
 
-	define('APP', ROOT.'app'.DS);
+	require 'sys/helper.php';
 
-	define('APP_W', basename(dirname($_SERVER['SCRIPT_NAME'])));
-
-	require 'sys/core.php';
+	
 	Core::init();
