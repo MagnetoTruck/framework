@@ -2,6 +2,7 @@
 
 	require 'sys/request.php';
 	class Core{
+<<<<<<< HEAD
 		static private $controller;
 		static private $action;
 
@@ -53,5 +54,16 @@
 				echo 'No controller';
 			}
 
+=======
+		static function init(){
+			echo $_SERVER['REQUEST_URI'];
+			Request::retrieve();
+			$controller=Request::getCont();
+			Coder::code($controller);
+			$action=Request::getAct();
+			Coder::code($action);
+			$params=Request::getparams();
+			Coder::codear($params);
+>>>>>>> 21862d4a859bdce45d44331b07486e9bed5cf5aa
 		}
 	}

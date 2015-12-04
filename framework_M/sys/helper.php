@@ -2,9 +2,12 @@
 
 	spl_autoload_register(null,false);
 	spl_autoload_register('AutoLoad::SysLoader');
+<<<<<<< HEAD
 	spl_autoload_register('AutoLoad::ContLoader');
 	spl_autoload_register('AutoLoad::ModLoader');
 	spl_autoload_register('AutoLoad::ViewLoaders');
+=======
+>>>>>>> 21862d4a859bdce45d44331b07486e9bed5cf5aa
 
 	class AutoLoad{
 		static function SysLoader($class)
@@ -18,6 +21,7 @@
 			require $file;
 
 		}
+<<<<<<< HEAD
 
 		static function ContLoader($class)
 		{
@@ -52,6 +56,8 @@
 			require $file;
 
 		}
+=======
+>>>>>>> 21862d4a859bdce45d44331b07486e9bed5cf5aa
 	}//END CLAS AUTOLOAD
 
 	/**
